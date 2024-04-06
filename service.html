@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Car Mechanic Shop- Services</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Car Mechanic Shop Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Service</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="category">
+            <br><br><h2>Our Services</h2>
+            <form id="serviceForm">
+                <section class="services">
+                    <div class="floating-box">
+                        <img src="images/giphy.gif" alt="gif">
+                        <p><b>Limited Deal!</b></p>
+                        <p>Get $20 off any service if you make your reservation now!</p>
+                    </div>
+                    <div class="container">
+                        
+                        <div class="service-item">
+                            <h3>Oil Change</h3>
+                            <img src="images/oilchange.png" alt="oilchange" class="service-img">
+                            <p>Perform a full synthetic oil change </p><input type="checkbox" id="service1" name="service" value="Oil change">
+                        </div>
+                        <div class="service-item">
+                            <h3>Tire rotation</h3>
+                            <img src="images/tirerotation.png" alt="tirerotation" class="service-img">
+                            <p>Rotate your tires according to standard </p><input type="checkbox" id="service2" name="service" value="Tire rotation">
+                        </div>
+                        <div class="service-item">
+                            <h3>Tire change</h3>
+                            <img src="images/tirechange.png" alt="tirechange" class="service-img">
+                            <p>Rotate your tires according to standard </p><input type="checkbox" id="service7" name="service" value="Tire change">
+                        </div>
+                        <div class="service-item">
+                            <h3>Engine diagnosing</h3>
+                            <img src="images/enginelights.png" alt="engine light" class="service-img">
+                            <p>We specialize in diagnosing and fixing engine issues.</p><input type="checkbox" id="service3" name="service" value="Engine diagnosing">
+                        </div>
+                        <div class="service-item">
+                            <h3>Inspection</h3>
+                            <img src="images/inspection.png" alt="inspection" class="service-img">
+                            <p>Ensure your safety with our thorough province standard inspections.</p><input type="checkbox" id="service4" name="service" value="Inspection">
+                        </div>
+                        <div class="service-item">
+                            <h3>Battery Replacement</h3>
+                            <img src="images/battery.png" alt="battery" class="service-img">
+                            <p>Ensure your battery is in best condition</p><input type="checkbox" id="service5" name="service" value="Battery Replacement">
+                        </div>
+                        <div class="service-item">
+                            <h3>Electrical system service</h3>
+                            <img src="images/electrical.png" alt="electrical" class="service-img">
+                            <p>Full inspection on your vehicle electircal system</p><input type="checkbox" id="service6" name="service" value="Electrical system service">
+                        </div>
+                        
+        
+                    </div>
+                </section>
+    
+                <label for="appointmentDate">Choose Date:</label><br><br>
+                <input type="date" id="appointmentDate" name="appointmentDate" required><br><br>
+    
+                <label for="appointmentTime">Choose Time:</label><br><br>
+                <input type="time" id="appointmentTime" name="appointmentTime" required><br><br>
+    
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+            <div id="output"></div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <h2>Contact Information</h2>
+        <p>Feel free to reach out to us using the following contact details:</p>
+        <ul>
+            <li><strong>Address:</strong> 123 Main Street, City, Country</li>
+            <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+            <li><strong>Email:</strong> info@carmechanicshop.com</li>
+        </ul>
+        <p>&copy; 2024 Car Mechanic Shop. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
